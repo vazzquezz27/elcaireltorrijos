@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Ropa - Asociación Cultural Tradicional Taurina "El Cairel" de Torrijos</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Imagenes/Otros/logo_pena.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/ropa.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVEGACIÓN -->
+    <header>
+        <a href="index.html#inicio" class="logo-nav">
+            <img src="/Imagenes/Otros/logo_pena.png" alt="Logo El Cairel">
+            <div class="logo-nav-text"><b>EL CAIREL <span>(TORRIJOS)</span></b></div>
+        </a>
+
+        <!-- Botones Escritorio -->
+        <nav class="nav-pills">
+            <a href="index.html#inicio" class="pill pill-default">INICIO</a>
+            <a href="index.html#nosotros" class="pill pill-default">LA PEÑA</a>
+            <a href="eventos.html" class="pill pill-default">EVENTOS</a>
+            
+            <!-- Botón activo en esta página -->
+            <a href="#" class="pill pill-active">NUESTRA ROPA</a>
+            
+            <a href="https://www.instagram.com/elcaireltorrijos/" target="_blank" class="pill pill-cta">INSTAGRAM</a>
+        </nav>
+
+        <!-- Botón Hamburguesa Móvil -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir Menú">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- Menú Móvil Desplegable -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <button class="close-menu-btn" id="closeMenuBtn" aria-label="Cerrar Menú">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <a href="index.html#inicio" class="mobile-link" onclick="closeMobileMenu()">INICIO</a>
+        <a href="index.html#nosotros" class="mobile-link" onclick="closeMobileMenu()">LA PEÑA</a>
+        <a href="eventos.html" class="mobile-link" onclick="closeMobileMenu()">EVENTOS</a>
+        <a href="#" class="mobile-link mobile-active" onclick="closeMobileMenu()">NUESTRA ROPA</a>
+        <a href="https://www.instagram.com/elcaireltorrijos/" target="_blank" class="mobile-link mobile-cta" onclick="closeMobileMenu()">INSTAGRAM</a>
+    </nav>
+
+    <!-- CABECERA DE LA PÁGINA (HERO PEQUEÑO) -->
+    <section class="page-header">
+        <div class="header-bg-overlay"></div>
+        <h1 class="page-header-title">NUESTRA ROPA</h1>
+        <p class="page-header-subtitle">Viste con orgullo los colores de nuestra Asociación. Hazte con nuestra indumentaria oficial y acompáñanos en las próximas fiestas y eventos.</p>
+    </section>
+
+    <!-- SECCIÓN DE PRODUCTOS -->
+    <main class="products-section">
+        
+        <div class="products-grid">
+            
+            <!-- PRODUCTO 1: CAMISETA CON SLIDER -->
+            <article class="product-card">
+                <div class="product-img-container">
+                    <!-- Contenedor del Carrusel -->
+                    <div class="slider-wrapper" id="slider-wrapper">
+                        <!-- Frente de la camiseta -->
+                        <img src="/Imagenes/Otros/camiseta-1.png" alt="Camiseta Frontal" class="slider-img">
+                        <!-- Espalda de la camiseta -->
+                        <img src="/Imagenes/Otros/camiseta-2.png" alt="Camiseta Espalda" class="slider-img">
+                    </div>
+
+                    <!-- Botones de Control (Flechas) -->
+                    <button class="slider-btn prev-btn" onclick="moveSlide(-1)">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn next-btn" onclick="moveSlide(1)">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                    <!-- Puntos indicadores inferiores -->
+                    <div class="slider-dots">
+                        <span class="dot active" onclick="setSlide(0)"></span>
+                        <span class="dot" onclick="setSlide(1)"></span>
+                    </div>
+
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Camiseta "El Cairel"</h3>
+                    <p class="product-price">Consultar a la directiva</p>
+                    <p class="product-desc">Nuestra clásica camiseta en color verde botella con el nombre en el pecho y el espectacular diseño del toro y el torero a la espalda. Cómoda, elegante y perfecta para cualquier evento.</p>
+                    <a href="mailto:elcaireltorrijos@gmail.com?subject=Pedido Camiseta" class="product-btn">ENCARGAR AHORA</a>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 2: PAÑUELO -->
+            <article class="product-card">
+                <div class="product-img-container">
+                    <!-- Foto real del pañuelo enlazada aquí -->
+                    <img src="/Imagenes/Otros/pañuelo.png" alt="Pañuelo Oficial El Cairel" class="product-img">
+                </div>
+                <div class="product-content">
+                    <h3 class="product-title">Pañuelo de Fiestas</h3>
+                    <p class="product-price">Consultar a la directiva</p>
+                    <p class="product-desc">El tradicional pañuelo al cuello. El complemento que no te puede faltar para completar tu vestimenta y sentirte parte de "El Cairel" en cada celebración de nuestro pueblo.</p>
+                    <a href="mailto:elcaireltorrijos@gmail.com?subject=Pedido Pañuelo" class="product-btn">ENCARGAR AHORA</a>
+                </div>
+            </article>
+
+        </div>
+
+    </main>
+
+    <footer class="footer-section" id="contacto">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>EL CAIREL <span>(TORRIJOS)</span></h3>
+                <br>
+                <span class="footer-slogan">¡Orgullo, juventud y pasión!</span>
+                <p class="footer-desc">
+                    No dudes en unirte a nosotros para devolver al pueblo sus mejores costumbres.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Contacto</h4>
+                <ul class="footer-list">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="https://maps.google.com/?q=Torrijos,+Toledo" target="_blank">45500 Torrijos (Toledo)</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="https://wa.me/34640396465">Escríbenos por WhatsApp</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:elcaireltorrijos@gmail.com">elcaireltorrijos@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">¡ÚNETE A NOSOTROS!</h4>
+                <a href="mailto:elcaireltorrijos@gmail.com" class="footer-btn">
+                    MÁS INFORMACIÓN
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-copy">
+            © 2026 Peña Taurina El Cairel (Torrijos). Todos los derechos reservados.
+            <a href="legal.html" style="color: #6C7A86; text-decoration: underline; margin-top: 10px; display: inline-block;">Aviso Legal y Política de Privacidad</a>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        /* ================= MENÚ HAMBURGUESA ================= */
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const closeMenuBtn = document.getElementById('closeMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        hamburgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        });
+
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('open');
+            document.body.style.overflow = 'auto'; 
+        }
+        closeMenuBtn.addEventListener('click', closeMobileMenu);
+
+        /* ================= SLIDER CAMISETA ================= */
+        let currentSlide = 0;
+        const totalSlides = 2; // Solo tenemos 2 fotos: camiseta1 y camiseta2
+        const sliderWrapper = document.getElementById('slider-wrapper');
+        const dots = document.querySelectorAll('.dot');
+
+        function updateSliderPosition() {
+            // Mueve el contenedor a la izquierda según el índice actual
+            sliderWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            // Actualizar puntos (dots)
+            dots.forEach((dot, index) => {
+                if(index === currentSlide) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+
+        // Función para las flechas
+        function moveSlide(direction) {
+            currentSlide += direction;
+            if (currentSlide < 0) currentSlide = totalSlides - 1; // Si va atrás en la 1, pasa a la 2
+            if (currentSlide >= totalSlides) currentSlide = 0; // Si va adelante en la 2, vuelve a la 1
+            updateSliderPosition();
+        }
+
+        // Función para tocar los puntos directamente
+        function setSlide(index) {
+            currentSlide = index;
+            updateSliderPosition();
+        }
+    </script>
+</body>
+</html>

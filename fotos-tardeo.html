@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Sementera 2025 - Peña Taurina "El Cairel"</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="Imagenes/Otros/logo_pena.png">
+    <link rel="stylesheet" href="css/fotos-tardeo.css">
+
+    <!-- ================= GOOGLE ANALYTICS ================= -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PPKKZ93XM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5PPKKZ93XM');
+    </script>
+
+</head>
+<body>
+
+    <header>
+        <a href="index.html#inicio" class="logo-nav">
+            <img src="Imagenes/Otros/logo_pena.png" alt="Logo El Cairel">
+            <div class="logo-nav-text"><b>EL CAIREL <span>(TORRIJOS)</span></b></div>
+        </a>
+        <nav class="nav-pills">
+            <a href="index.html#inicio" class="pill pill-default">INICIO</a>
+            <a href="index.html#nosotros" class="pill pill-default">LA PEÑA</a>
+            <a href="eventos.html" class="pill pill-active">EVENTOS</a>
+            <a href="ropa.html" class="pill pill-default">NUESTRA ROPA</a>
+            <a href="https://www.instagram.com/elcaireltorrijos/" target="_blank" class="pill pill-cta">INSTAGRAM</a>
+        </nav>
+        <button class="hamburger-btn" id="hamburgerBtn"><i class="fa-solid fa-bars"></i></button>
+    </header>
+
+    <nav class="mobile-menu" id="mobileMenu">
+        <button class="close-menu-btn" id="closeMenuBtn"><i class="fa-solid fa-xmark"></i></button>
+        <a href="index.html#inicio" class="mobile-link" onclick="closeMobileMenu()">INICIO</a>
+        <a href="index.html#nosotros" class="mobile-link" onclick="closeMobileMenu()">LA PEÑA</a>
+        <a href="eventos.html" class="mobile-link mobile-active" onclick="closeMobileMenu()">EVENTOS</a>
+        <a href="ropa.html" class="mobile-link" onclick="closeMobileMenu()">NUESTRA ROPA</a>
+        <a href="https://www.instagram.com/elcaireltorrijos/" target="_blank" class="mobile-link mobile-cta" onclick="closeMobileMenu()">INSTAGRAM</a>
+    </nav>
+
+    <section class="page-header">
+        <div class="header-bg-overlay"></div>
+        <h1 class="page-header-title">TARDEO LA VISPERA</h1>
+        <p class="page-header-subtitle">Nuestras primer gran evento en Torrijos, fue realizado con éxito con nuestra gente.</p>
+        <a href="eventos.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Volver a Eventos</a>
+    </section>
+
+    <main class="gallery-container">
+        <div class="photo-grid" id="photoGrid"></div>
+    </main>
+
+    <footer class="footer-section" id="contacto">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>EL CAIREL <span>(TORRIJOS)</span></h3>
+                <br>
+                <span class="footer-slogan">¡Orgullo, juventud y pasión!</span>
+                <p class="footer-desc">
+                    No dudes en unirte a nosotros para devolver al pueblo sus mejores costumbres.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Contacto</h4>
+                <ul class="footer-list">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="https://maps.google.com/?q=Torrijos,+Toledo" target="_blank">45500 Torrijos (Toledo)</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="https://wa.me/34640396465">Escríbenos por WhatsApp</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:elcaireltorrijos@gmail.com">elcaireltorrijos@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">¡ÚNETE A NOSOTROS!</h4>
+                <a href="mailto:elcaireltorrijos@gmail.com" class="footer-btn">
+                    MÁS INFORMACIÓN
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-copy">
+            © 2026 Peña Taurina El Cairel (Torrijos). Todos los derechos reservados.
+            <a href="legal.html" style="color: #6C7A86; text-decoration: underline; margin-top: 10px; display: inline-block;">Aviso Legal y Política de Privacidad</a>
+        </div>
+    </footer>
+
+    <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const closeMenuBtn = document.getElementById('closeMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        hamburgerBtn.addEventListener('click', () => { mobileMenu.classList.add('open'); document.body.style.overflow = 'hidden'; });
+        function closeMobileMenu() { mobileMenu.classList.remove('open'); document.body.style.overflow = 'auto'; }
+        closeMenuBtn.addEventListener('click', closeMobileMenu);
+
+        // =========================================================================
+        // GENERADOR AUTOMÁTICO DE LA GALERÍA SEMENTERA 2025
+        // =========================================================================
+        const photoGrid = document.getElementById('photoGrid');
+        
+        // AQUÍ CAMBIAMOS EL NÚMERO TOTAL DE FOTOS A 15
+        const totalFotos = 56; 
+        
+        // AQUÍ CAMBIAMOS LA EXTENSIÓN A ".jpg" EN MINÚSCULA
+        const extensionDeLaFoto = '.jpeg'; 
+        
+        // AQUÍ CAMBIAMOS LA CARPETA A "Fiestas 2025"
+        const nombreDeLaCarpeta = 'Imagenes/Fotos Tardeo';
+
+        for (let i = 1; i <= totalFotos; i++) {
+            const item = document.createElement('div');
+            item.className = 'photo-item';
+            
+            // Creamos la ruta de la imagen
+           const imgSrc = `${nombreDeLaCarpeta}/foto${i}${extensionDeLaFoto}`;
+            
+            const img = document.createElement('img');
+            img.src = imgSrc;
+            img.alt = `Fotos Tardeo - Foto ${i}`;
+            img.setAttribute('loading', 'lazy'); 
+            
+            const downloadBtn = document.createElement('a');
+            downloadBtn.href = imgSrc;
+            downloadBtn.download = ''; 
+            downloadBtn.className = 'download-btn';
+            downloadBtn.title = 'Descargar foto';
+            downloadBtn.innerHTML = '<i class="fa-solid fa-download"></i>';
+            
+            item.appendChild(img);
+            item.appendChild(downloadBtn);
+            photoGrid.appendChild(item);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asociación Cultural Tradicional Taurina "El Cairel" de Torrijos</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Imagenes/Otros/logo_pena.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="css/index.css" rel="stylesheet">
+    
+</head>
+<body>
+
+    <header>
+        <a href="#inicio" class="logo-nav">
+            <img src="Imagenes/Otros/logo_pena.png" alt="Logo El Cairel">
+            <div class="logo-nav-text"><b>EL CAIREL <span>(TORRIJOS)</span></b></div>
+        </a>
+        <nav class="nav-pills">
+            <a href="#inicio" class="pill pill-active section-link">INICIO</a>
+            <a href="#nosotros" class="pill pill-default section-link">LA PEÑA</a>
+            <a href="eventos.html" class="pill pill-default">EVENTOS</a>
+            <a href="ropa.html" class="pill pill-default">NUESTRA ROPA</a>
+            <a href="https://www.instagram.com/elcaireltorrijos/" target="_blank" class="pill pill-cta">INSTAGRAM</a>
+        </nav>
+
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir Menú">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </header>
+
+    <nav class="mobile-menu" id="mobileMenu">
+        <button class="close-menu-btn" id="closeMenuBtn" aria-label="Cerrar Menú">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <a href="#inicio" class="mobile-link section-link" onclick="closeMobileMenu()">INICIO</a>
+        <a href="#nosotros" class="mobile-link section-link" onclick="closeMobileMenu()">LA PEÑA</a>
+        <a href="eventos.html" class="mobile-link" onclick="closeMobileMenu()">EVENTOS</a>
+        <a href="ropa.html" class="mobile-link" onclick="closeMobileMenu()">NUESTRA ROPA</a>
+        <a href="https://www.instagram.com/elcaireltorrijos/" target="_blank" class="mobile-link mobile-cta" onclick="closeMobileMenu()">INSTAGRAM</a>
+    </nav>
+
+    <section class="hero-section page-section" id="inicio">
+        <div class="bg-imagen-torrijos"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-grid">
+            <div class="hero-left">
+                <h1>ORGULLO, JUVENTUD Y PASIÓN POR TORRIJOS</h1>
+                <p>Queremos devolverle a nuestro pueblo parte de su esencia, fomentando la tauromaquia y manteniendo vivas nuestras celebraciones.</p>
+            </div>
+            <div class="hero-right">
+                <img src="Imagenes/Otros/logo_pena.png" alt="Óleo El Cairel" class="logo-gigante">
+            </div>
+        </div>
+    </section>
+
+    <section class="welcome-section page-section" id="nosotros">
+        <h2 class="welcome-title">BIENVENIDOS A LA PEÑA TAURINA "EL CAIREL" <span>(TORRIJOS)</span></h2>
+        <p class="welcome-text">
+            Somos un grupo de jóvenes torrijeños que compartimos un mismo sentimiento: el orgullo de pertenecer a este pueblo. Nuestro objetivo no es solo fomentar la tauromaquia, sino también recuperar y cuidar esos momentos de encuentro que nos identifican como comunidad.
+        </p>
+        <div class="contenedor-foto-grupo">
+            <img src="Imagenes/Otros/grupo.JPG" alt="Jóvenes de la Peña El Cairel en la Plaza" class="foto-grupo">
+        </div>
+        <a href="https://www.instagram.com/elcaireltorrijos/" target="_blank" class="btn-insta">
+            SÍGUENOS EN @ELCAIRELTORRIJOS
+        </a>
+        <div class="contenedor-banderas">
+            <img src="Imagenes/Otros/bandera-espana.png" alt="Bandera de España" class="bandera" title="Bandera de España">
+            <img src="Imagenes/Otros/bandera-torrijos.png" alt="Bandera de Torrijos" class="bandera" title="Bandera de Torrijos">
+        </div>
+    </section>
+
+    <footer class="footer-section" id="contacto">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>EL CAIREL <span>(TORRIJOS)</span></h3>
+                <br>
+                <span class="footer-slogan">¡Orgullo, juventud y pasión!</span>
+                <p class="footer-desc">
+                    No dudes en unirte a nosotros para devolver al pueblo sus mejores costumbres.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">Contacto</h4>
+                <ul class="footer-list">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <a href="https://maps.google.com/?q=Torrijos,+Toledo" target="_blank">45500 Torrijos (Toledo)</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="https://wa.me/34640396465">Escríbenos por WhatsApp</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:elcaireltorrijos@gmail.com">elcaireltorrijos@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-title">¡ÚNETE A NOSOTROS!</h4>
+                <a href="mailto:elcaireltorrijos@gmail.com" class="footer-btn">
+                    MÁS INFORMACIÓN
+                </a>
+            </div>
+        </div>
+        <div class="footer-copy">
+            © 2026 Peña Taurina El Cairel (Torrijos). Todos los derechos reservados.
+            <a href="legal.html" style="color: #6C7A86; text-decoration: underline; margin-top: 10px; display: inline-block;">Aviso Legal y Política de Privacidad</a>
+            <a href="#" style="color: #6C7A86;" onclick="reabrirCookies(); return false;"> Configurar Cookies</a>
+        </div>
+        <script>
+        function reabrirCookies() {
+            document.getElementById('banner-cookies').classList.add('mostrar');
+        }
+        </script>
+    </footer>
+
+    <script>
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const closeMenuBtn = document.getElementById('closeMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        hamburgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        });
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('open');
+            document.body.style.overflow = 'auto'; 
+        }
+        closeMenuBtn.addEventListener('click', closeMobileMenu);
+        const sections = document.querySelectorAll('.page-section');
+        const desktopLinks = document.querySelectorAll('.nav-pills .section-link');
+        const mobileLinks = document.querySelectorAll('.mobile-menu .section-link');
+        window.addEventListener('scroll', () => {
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            desktopLinks.forEach(link => {
+                link.classList.remove('pill-active');
+                link.classList.add('pill-default');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.remove('pill-default');
+                    link.classList.add('pill-active');
+                }
+            });
+
+            mobileLinks.forEach(link => {
+                link.classList.remove('mobile-active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('mobile-active');
+                }
+            });
+        });
+        
+    </script>
+    
+        <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+        'analytics_storage': 'denied',
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'wait_for_update': 500
+    });
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PPKKZ93XM"></script>
+    <script>
+    gtag('js', new Date());
+    gtag('config', 'G-5PPKKZ93XM');
+    </script>
+    <div id="banner-cookies" class="cookie-banner">
+    <div class="cookie-contenido">
+        <div class="cookie-encabezado">
+        <h4 class="cookie-titulo">¡ATENCIÓN!</h4>
+        </div>
+        <p class="cookie-texto">
+        Utilizamos cookies propias y de terceros para analizar el tráfico de la web, personalizar contenidos y mejorar su experiencia de navegación. Puede aceptar todas las cookies, rechazarlas o configurar sus preferencias.
+        </p>
+        <div class="cookie-acciones">
+        <button onclick="aceptarCookies()" class="btn-cookie btn-aceptar">ACEPTAR</button>
+        <button onclick="rechazarCookies()" class="btn-cookie btn-rechazar">RECHAZAR</button>
+        </div>
+    </div>
+    </div>
+
+    <script>
+    window.addEventListener('DOMContentLoaded', () => {
+    const consentimiento = localStorage.getItem('consentimiento_cookies');
+    
+    if (!consentimiento) {
+      setTimeout(() => {
+        document.getElementById('banner-cookies').classList.add('mostrar');
+      }, 600);
+    } else if (consentimiento === 'concedido') {
+      activarGoogleAnalytics();
+    }
+  });
+  function aceptarCookies() {
+    activarGoogleAnalytics();
+    localStorage.setItem('consentimiento_cookies', 'concedido');
+    ocultarBanner();
+  }
+  function rechazarCookies() {
+    localStorage.setItem('consentimiento_cookies', 'denegado');
+    ocultarBanner();
+  }
+  function activarGoogleAnalytics() {
+    if (typeof gtag === 'function') {
+      gtag('consent', 'update', {
+        'analytics_storage': 'granted',
+        'ad_storage': 'granted',
+        'ad_user_data': 'granted',
+        'ad_personalization': 'granted'
+      });
+    }
+  }
+  function ocultarBanner() {
+    document.getElementById('banner-cookies').classList.remove('mostrar');
+  }
+  </script>
+</body>
+</html>
